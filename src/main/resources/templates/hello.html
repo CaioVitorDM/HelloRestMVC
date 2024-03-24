@@ -1,0 +1,28 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <title>Hello World MVC</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #f0f0f0;
+      color: #333;
+      text-align: center;
+      padding-top: 100px;
+    }
+
+    p {
+      background-color: #fff;
+      border: 1px solid #ddd;
+      padding: 20px;
+      display: inline-block;
+      border-radius: 10px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+  </style>
+</head>
+<body>
+<p th:text="'Hello MVC, ' + ${name} + '!'">Hello MVC, John Doe!</p>
+</body>
+</html>
